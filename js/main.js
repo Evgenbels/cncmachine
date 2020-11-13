@@ -31,7 +31,7 @@ open('/index.php', 'test', params);
   }
   if (event.altKey) {
     $('.popup-window').popup(); //запускаем функцию на наш блок с формой
-    alert('нажат Alt');
+//    alert('нажат Alt');
   }
   if (event.shiftKey) {
     alert('нажат Shift');
