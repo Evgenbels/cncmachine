@@ -115,30 +115,32 @@
 		<h1>Пример FORM -- GET и POST</h1>
 		<div id="prget">
 			<p>  </p>
-			<form>
+			<form action="moiget.php" method="get">
 				<fieldset>
     				<legend>Пример Get</legend>
-    				<p><label>Имя 1<input type="text" id="name1"></label></p>
-    				<p><label>Имя 2<input type="text" id="name2"></label></p>
+    				<p><label>Имя 1<input type="text" id="name1" name="name1"></label></p>
+    				<p><label>Имя 2<input type="text" id="name2" name="name2"></label></p>
     			</fieldset>
 				<input type="submit" value="Отправить GET">
 			</form>
 		</div>
 		<div id="prpost">
 			<p>  </p>
-			<form>
+			<form enctype="multipart/form-data" action="moipost.php" method="post">
 				<fieldset>
     				<legend>Пример Post</legend>
-    				<p><label>Имя 3<input type="text" id="name3"></label></p>
-    				<p><label>Имя 4<input type="text" id="name4"></label></p>
-    			</fieldset>
-				<input type="submit" value="Отправить POST">
+<!--    				<p><label>Имя 3<input type="text" id="name3" name="name3" ></label></p>
+    				<p><label>Имя 4<input type="text" id="name4" name="name4"></label></p>-->
+<!-- Поле MAX_FILE_SIZE должно быть указано до поля загрузки файла -->
+    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+    <!-- Название элемента input определяет имя в массиве $_FILES -->
+    Отправить этот файл: <input name="userfile" type="file" />
+    <input type="submit" value="Отправить файл" />    			</fieldset>
+<!--				<input type="submit" value="Отправить POST">-->
 			</form>
 		</div>
 	</div>
 </div>
-
-
 </section>
 <?php include 'footer_nav.php'; ?>
 </body>
