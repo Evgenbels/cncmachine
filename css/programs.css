@@ -1,0 +1,39 @@
+
+#formexp {
+display: flex;
+border: 2px solid red;
+/*flex: 1 1 2;*/
+}
+
+#bl1 {
+border: 2px solid rgb(0,128,128);
+border-radius: 20px;
+flex: auto;
+}
+#bl2 {
+border: 2px solid rgb(0,128,128);
+flex: auto;
+}
+#bl3 {
+border: 2px solid rgb(0,128,128);
+border-radius: 40px;
+flex: auto;
+}
+#prget {
+border: 2px solid rgb(0,128,255);
+border-radius: 30px;
+height: 300px;
+}
+#prpost {
+border: 2px solid rgb(0,128,255);
+border-radius: 30px;
+height: 300px;
+}
+#tabrezbd {
+border: 2px solid red;
+width: 100%;
+}
+
+#tabrezbd td {
+border: 2px solid red;
+}

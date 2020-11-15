@@ -1,20 +1,10 @@
 <?php
  
 // Код, который будет выполняться, если форма была оправлена:
-if ($_POST['submit']) {
- 
+if (isset$_POST['submit']) {
     // подключение к базе данных
     // (возможно, вам придется настроить имя хоста, имя пользователя и пароль)
-
 /*
-    $dbh = new mysqli("localhost", "root", "", "imagesstore");
- 
-    if(mysqli_connect_errno())
-    {
-        exit("Ошибка подключения к базе данных MySQL: Сервер база данных не доступен!<br>
-        Проверте параметры подключения к базе данных.");
-    }
-*/
     $host = '127.0.0.1';
     $db   = 'cncmachine';
     $user = 'root';
@@ -32,19 +22,17 @@ if ($_POST['submit']) {
         } catch (PDOException $e) {
         $rezultat="Подключение не удалось: ".$e->getMessage();
         } 
-
-
-
  
     $data = addslashes(fread(fopen($_FILES['file']['tmp_name'], "r"), 
     filesize($_FILES['file']['tmp_name'])));
- 
+*/ 
 //    $_POST['form_description'] = trim($_POST['form_description']);
-    $size = filesize ($_FILES['file']['tmp_name']);
-
+//    $size = filesize ($_FILES['file']['tmp_name']);
+//$count = 1;
+/*
 $count = $pdo->exec("INSERT INTO prg_rem_foto (idsp,npp,name,foto_val)
   "."VALUES (21,0,".$_FILES["file"]["name"].",".$data.")");
- 
+*/
 
 
 //  if(!$result) exit("Ошибка выполнения SQL запроса!");
@@ -52,7 +40,8 @@ $count = $pdo->exec("INSERT INTO prg_rem_foto (idsp,npp,name,foto_val)
 //  $result->execute(); 
 //  $id = $dbh->prepare();
  
-  echo "<p>Изменено ".$_FILES["file"]["name"].": <b>".$count."</b> строк!";
+//  echo "<p>Изменено ".$_FILES["file"]["name"].": <b>".$count."</b> строк!";
+  echo " Изменено : <b>hbgbh</b> строк!";
  
 } else {
  

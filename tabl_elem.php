@@ -123,10 +123,11 @@ $npp=1;
 <div class="popup-window">  
     <p class="close"></p>  
     <table>
-      <form method="POST" action="savebd.php" enctype="multipart/form-data">
+      <form method="POST" action="savebd.php" >
+<!--      <form method="POST" action="savebd.php" enctype="multipart/form-data">
       <tr><td>Текст:</td><td><textarea rows="10" cols="40"></textarea></td></tr>
       <tr><td>Текст:</td><td><input type="hidden" name="MAX_FILE_SIZE" value="30000" /></td></tr>
-      <tr><td>Файл:</td><td><input type="file" name="userfile"/></td></tr>
+      <tr><td>Файл:</td><td><input type="file" name="userfile"/></td></tr>  -->
       <tr><td>Коментарий:</td><td><input type="text"/></td></tr>
       <tr>
         <td colspan="2" align="center">
