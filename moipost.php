@@ -47,7 +47,6 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
 
 echo 'Некоторая отладочная информация:';
 print_r($_FILES);
-
 print "</pre>";
 
 ?>
