@@ -9,7 +9,7 @@
 <title></title>
 </head>
 <body>
-<?php $a=1; include 'header_nav.php'; ?>
+<?php $a=5; include 'header_nav.php'; ?>
 <section>
 <div  id="formexp" >
    <div id="bl1">

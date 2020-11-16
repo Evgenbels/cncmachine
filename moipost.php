@@ -1,15 +1,33 @@
 <?php
 //echo "Имя 3".$_POST['name3']; 
 //echo "Имя 4".$_POST['name4']; 
-$uploaddir = '/home/moi_site/cnc_machine.site/public_html/upload/';
+$uploaddir = '/home/www/cncmachine.site/upload/';
 //$uploaddir = './';
 $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 echo "Файл:".$uploadfile."<\n";
 echo '<pre>';
 
+$opt = [PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES   => false,];
+try {
+    $pdo=new PDO("mysql:host=localhost;dbname=cncmachine;charset=utf8",'root', 'DiLu0311',$opt); 
+    $rezultat="Ok";     
+   } catch (PDOException $e) {
+    $rezultat="Подключение не удалось: ".$e->getMessage();
+   } 
+
+
 if (is_uploaded_file($_FILES['userfile']['tmp_name'])) {
    echo "Файл ". $_FILES['userfile']['name'] ." успешно загружен.\n". $_FILES['userfile']['tmp_name'] ."\n";
    echo "Отображаем содержимое\n";
+
+$imagetmp=file_get_contents($_FILES['userfile']['tmp_name']);
+
+$stmt = $pdo->prepare('INSERT INTO prg_rem_foto (idsp,npp,name,foto_val) VALUES (22,0,"Primer",?); ');
+
+$stmt->execute([$imagetmp]);
+
 //   readfile($_FILES['userfile']['tmp_name']);
    echo "\n";
 	if (!copy($_FILES['userfile']['tmp_name'], $uploadfile)) {
