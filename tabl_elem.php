@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/nav.css">
 <link rel="stylesheet" href="css/tabl_elem.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
 <script src="js/jquery-3.4.1.min.js"></script>
 <title></title>
 </head>
@@ -102,42 +103,70 @@ $npp=1;
 ?>
   </table>
   </td><td>
-     <img src="foto/arduino_uno_r3.webp" alt="" width="300px" id="miimag" > 
- <!--
-     <img src="foto/arduino_uno_r3.webp" alt="" width="300px" id="miimag" contextmenu="edit"> 
-  <menu type="context" id="edit">
-   <li>Вырезать</li>
-   <li>Копировать</li>
-   <li>Вставить</li>
-   <li>Редактировать</li>
-   <li>Выравнивание</li>
-  </menu> -->
-  <div id="target">
-  Right-click here
-</div>
+    <div id="div_text">
+      <p>div_text</p>
+    </div>
+    <div id="div_imaj">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="foto/arduino_uno_r3.webp" alt="" width="300px" id="miimag0" ></div>
+          <div class="swiper-slide"><img src="foto/no-image.png" alt="" width="300px" id="miimag1" ></div>
+          <div class="swiper-slide"><img src="foto/no-image.png" alt="" width="300px" id="miimag2" ></div>
+          <div class="swiper-slide"><img src="foto/no-image.png" alt="" width="300px" id="miimag3" ></div>
+          <div class="swiper-slide"><img src="foto/no-image.png" alt="" width="300px" id="miimag4" ></div>
+          <div class="swiper-slide"><img src="foto/no-image.png" alt="" width="300px" id="miimag5" ></div>
+          <div class="swiper-slide"><img src="foto/no-image.png" alt="" width="300px" id="miimag6" ></div>
+          <div class="swiper-slide"><img src="foto/no-image.png" alt="" width="300px" id="miimag7" ></div>
+          <div class="swiper-slide"><img src="foto/no-image.png" alt="" width="300px" id="miimag8" ></div>
+          <div class="swiper-slide"><img src="foto/no-image.png" alt="" width="300px" id="miimag9" ></div>
+        </div>
+    <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+ <!-- <img src="foto/arduino_uno_r3.webp" alt="" width="300px" id="miimag" > 
+ 
+      <img src="foto/arduino_uno_r3.webp" alt="" width="300px" id="miimag" contextmenu="edit"> 
+      <menu type="context" id="edit">
+      <li>Вырезать</li>
+      <li>Копировать</li>
+      <li>Вставить</li>
+      <li>Редактировать</li>
+      <li>Выравнивание</li>
+      </menu> -->
+    </div>
+    <div id="target">
+      <p>Right-click here</p>
+    </div>
+    <div id="div_text_prg">
+      <p>div_text_prg</p>
+    </div>
   </td></tr>
 </table>
 </section>
-<div class="backpopup"></div>
+<!-- class="backpopup"></div>-->
 <!--форма для заполнения-->
-<div class="popup-window">  
-    <p class="close"></p>  
-    <table>
-      <form method="POST" action="savebd.php" >
+<!-- class="popup-window">  
+  <p class="close"></p>  
+  <table>
+    <form method="POST" action="savebd.php" >  -->
 <!--      <form method="POST" action="savebd.php" enctype="multipart/form-data">
       <tr><td>Текст:</td><td><textarea rows="10" cols="40"></textarea></td></tr>
       <tr><td>Текст:</td><td><input type="hidden" name="MAX_FILE_SIZE" value="30000" /></td></tr>
       <tr><td>Файл:</td><td><input type="file" name="userfile"/></td></tr>  -->
-      <tr><td>Коментарий:</td><td><input type="text"/></td></tr>
+<!--  <tr><td>Коментарий:</td><td><input type="text"/></td></tr>
       <tr>
         <td colspan="2" align="center">
           <input type="submit" value="Загрузить">
         </td>
       </tr>
-      </form>
-    </table>
-  </div>
+    </form>
+  </table>
+</div>  -->
 <?php include 'footer_nav.php'; ?>
 </body>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </html>
