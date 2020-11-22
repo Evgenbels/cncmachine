@@ -24,7 +24,7 @@ if (is_uploaded_file($_FILES['userfile']['tmp_name'])) {
 
 $imagetmp=file_get_contents($_FILES['userfile']['tmp_name']);
 
-$stmt = $pdo->prepare('INSERT INTO prg_rem_foto (idsp,npp,name,foto_val) VALUES (22,0,"Primer",?); ');
+$stmt = $pdo->prepare('INSERT INTO prg_rem_foto (idsp,npp,name,foto_val) VALUES (24,0,"Primer",?); ');
 
 $stmt->execute([$imagetmp]);
 

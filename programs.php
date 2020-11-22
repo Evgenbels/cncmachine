@@ -132,7 +132,7 @@
 <!--    				<p><label>Имя 3<input type="text" id="name3" name="name3" ></label></p>
     				<p><label>Имя 4<input type="text" id="name4" name="name4"></label></p>-->
 <!-- Поле MAX_FILE_SIZE должно быть указано до поля загрузки файла -->
-    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+    <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
     <!-- Название элемента input определяет имя в массиве $_FILES -->
     Отправить этот файл: <input name="userfile" type="file" />
     <input type="submit" value="Отправить файл" />    			</fieldset>
