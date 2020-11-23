@@ -11,7 +11,7 @@
 <body>
 <?php $a=1; include 'header_nav.php'; ?>
 <section >
-   <h1>Строка таблицы</h1>
+   <h1>Строка таблицы1</h1>
 </section>
 <?php include 'footer_nav.php'; ?>
 </body>
