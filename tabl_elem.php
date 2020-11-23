@@ -4,8 +4,8 @@
 <meta charset="utf-8" />
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/nav.css">
-<link rel="stylesheet" href="css/tabl_elem.css">
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/tabl_elem.css">
 <script src="js/jquery-3.4.1.min.js"></script>
 <title></title>
 </head>

@@ -68,7 +68,7 @@ window.addEventListener("load", function(){
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-      },
+      }
     });
 }); 
 
