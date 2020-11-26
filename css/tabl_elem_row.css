@@ -1,0 +1,27 @@
+#mainblok {
+display: flex;
+width: 100%;
+height: 100%;
+min-height: 300px;
+background-image: linear-gradient(to right, #0000ff, #00ff00 10%, #00ff00 90%, #0000ff);
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+border: 1px solid rgba(255,0,0, 1.0); 
+
+justify-content: center;
+align-content: flex-start; 
+}
+
+#leftblok {
+flex: 3 1 auto;
+}
+
+#rightblok {
+flex: 1 1 auto;
+}
+
+#mainblok>div>div {
+min-height: 300px;
+min-width: 300px;
+border: 2px solid rgb(255,100,100);	
+}
