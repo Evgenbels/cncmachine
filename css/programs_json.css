@@ -1,0 +1,6 @@
+section {
+   background-image: linear-gradient(to right, #0000ff, #00ff00 10%, #00ff00 90%, #0000ff);
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   border: 1px solid rgba(255,0,0, .0);   
+}
