@@ -30,9 +30,8 @@ try {
    } 
 //echo "({'rezultat':'".$rezultat."','param1':'".$output."', 'param2':'30'})";
 
-$stmt = $pdo->query('SELECT a.id,a.typ,a.name,a.kol,a.name_inout,a.markirovka,b.npp,b.name as namefoto,b.foto_val
+$stmt = $pdo->query('SELECT a.id,a.typ,a.name,a.kol,a.name_inout,a.markirovka 
 FROM spisok a
-left outer join prg_rem_foto b on a.id=b.idsp
 order by a.typ,a.name; ');
 
 //   if($stmt->fetch()) {echo "({'rezultat':'ErrorFV','param1':'".$output."  Такой логин уже используется, попробуйте другой!!!', 'param2':'33'})";return;}

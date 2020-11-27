@@ -107,7 +107,7 @@
 		<p><input type="button" value="Работать">
 		<input type="submit" value="Отправить">
 		<input type="reset" value="Очистить"></p>
-		<button>Button</button>
+		<button id="moibutton">Button</button>
 	</form>
 
 	</div>

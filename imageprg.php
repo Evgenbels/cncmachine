@@ -2,6 +2,7 @@
 if ( isset( $_GET['id'] ) ) {
   // Здесь $id номер изображения
   $id = (int)$_GET['id'];
+  $npp = (int)$_GET['npp'];
   if ( $id > 0 ) {
 
     $host = '127.0.0.1';

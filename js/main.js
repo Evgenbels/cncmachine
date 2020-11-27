@@ -17,7 +17,7 @@ function onTDClick(){
 //  document.getElementById('miimag').setAttribute("src","foto/LED.jpg");
 //  $('#miimag').attr("src","foto/LED.jpg");
   console.log('id='+row.find('td:eq(1)').html());
-  $('#miimag0').attr("src","imageprg.php?id="+row.find('td:eq(1)').html());
+  $('#miimag0').attr("src","imageprg.php?npp=0;id="+row.find('td:eq(1)').html());
 //  document.location.href="index.php";
 
    if (event.ctrlKey) {
