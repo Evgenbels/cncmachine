@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css/nav.css">
 <link rel="stylesheet" href="css/programs_json.css">
 <script src="js/jquery-3.4.1.min.js"></script>
-<title>Document</title>
+<title>programs_JSON</title>
 </head>
 <body>
 <?php $a=1; include 'header_nav.php'; ?>
@@ -14,7 +14,7 @@
 <h1>Проверка работы FETCH</h1>	
 <button id="mbutton">Выполнить</button>
 <div>
-<img src="foto_ali/arduino_uno.jpg" width="500px" height="500px">
+<img src="foto_ali/arduino_uno.jpg" width="500px" height="500px" id="mimg">
 </div>
 </section>
 <?php include 'footer_nav.php'; ?>	

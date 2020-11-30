@@ -23,7 +23,7 @@ if ( isset( $_GET['id'] ) ) {
         $rezultat="Подключение не удалось: ".$e->getMessage();
         } 
 
-    $stmt = $pdo->query('SELECT idsp,npp,name,foto_val FROM prg_rem_foto where idsp='.$id.'; ');
+    $stmt = $pdo->query('SELECT idsp,npp,name,foto_val FROM prg_rem_foto where idsp='.$id.' and npp='.$npp.'; ');
     $row = $stmt->fetch();
 
 //    while ($row = $stmt->fetch())

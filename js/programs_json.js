@@ -1,9 +1,10 @@
 window.addEventListener("load", function(){
   $('#mbutton').click(async function(){ 
 //    alert('Pres Button');
-
 /*
-let response = await fetch('/article/fetch/logo-fetch.svg');
+//let url='foto_ali/max6675.jpg';
+let url='imageprg.php?id=21&npp=0';
+let response = await fetch(url);
 
 let blob = await response.blob(); // скачиваем как Blob-объект
 
@@ -33,13 +34,18 @@ let res = fetch('filejson/exp001.json')
 let sjson=JSON.parse(res);
 alert(sjson[color]);
 */
+
 //let url='http://www.mocky.io/v2/5944e07213000038025b6f30';
-let url='filejson/exp001.json';
+//let url='filejson/exp001.json';
+let url='prg_json.php';
 let response = await fetch(url);
 
 if (response.ok) { // если HTTP-статус в диапазоне 200-299
   // получаем тело ответа (см. про этот метод ниже)
   let json = await response.json();
+  console.log(json);
+  console.log(json.a0);
+/*
   console.log("Ok ");
   console.log(json);
   console.log(json.array[0]);
@@ -49,7 +55,7 @@ if (response.ok) { // если HTTP-статус в диапазоне 200-299
   console.log(json.string);
   console.log(json.object.a);
   console.log(json.color);
-
+*/
 } else {
   alert("Ошибка HTTP: " + response.status);
 }
