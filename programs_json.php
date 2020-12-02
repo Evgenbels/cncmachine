@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css/nav.css">
 <link rel="stylesheet" href="css/programs_json.css">
 <script src="js/jquery-3.4.1.min.js"></script>
-<title>programs_JSON</title>
+<title>programs_JSON 1</title>
 </head>
 <body>
 <?php $a=1; include 'header_nav.php'; ?>
