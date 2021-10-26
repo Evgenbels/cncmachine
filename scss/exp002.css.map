@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACA,QAAS;EACT,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,SAAS",
+"mappings": "AACA,QAAS;EACT,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,SAAS;EACjB,SAAS,EAAE,IAAI",
 "sources": ["exp002.scss"],
 "names": [],
 "file": "exp002.css"
